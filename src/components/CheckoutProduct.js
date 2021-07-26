@@ -63,7 +63,7 @@ function CheckoutProduct({
               src="https://links.papareact.com/fdw"
               alt=""
             /> */}
-            <p className="text-xs text-gray-500">FREE Next-day Delivery</p>
+            <p className="text-xs text-gray-500">無料翌日配達</p>
           </div>
         )}
       </div>
@@ -71,10 +71,10 @@ function CheckoutProduct({
       {/* Right add/remove buttons */}
       <div className="flex flex-col space-y-2 my-auto justify-self-end">
         <button className="button" onClick={addItemToBasket}>
-          Add to Basket
+          カートに追加する
         </button>
         <button className="button" onClick={removeItemFromBasket}>
-          Remove from Basket
+          カートから削除する
         </button>
       </div>
     </div>
