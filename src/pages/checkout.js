@@ -48,7 +48,10 @@ function Checkout() {
 
           <div className="flex flex-col p-5 space-y-10 bg-white">
             <h1 className="text-3xl border-b pb-4">
-              {items.length === 0 ? "Your Basket is empty." : "Shopping Basket"}
+              {/* When there is no item in the cart, shows "Your Basket is empty." Otherwise, shows "Shopping Basket" */}
+              {items.length === 0
+                ? "カートに商品が入っていません。"
+                : "ショッピングカート"}
             </h1>
 
             {items.map((item, i) => (
@@ -72,7 +75,7 @@ function Checkout() {
           {items.length > 0 && (
             <>
               <h2 className="whitespace-nowrap">
-                Subtotal ({items.length} items):{" "}
+                小計 ({items.length}個の商品):{" "}
                 <span className="font-bold">
                   {/*USDJPY currency rate=108*. How do it truncate if JPY is used? (no decimal points) so use USD for now*/}
                   <Currency quantity={total} currency="USD" />
@@ -88,7 +91,9 @@ function Checkout() {
                   "from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed"
                 }`}
               >
-                {!session ? "Sign in to checkout" : "Proceed to checkout"}
+                {!session
+                  ? "レジに進むには、サインインしてください"
+                  : "レジに進む"}
               </button>
             </>
           )}

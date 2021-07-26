@@ -15,13 +15,13 @@ function Orders({ orders }) {
         <Header />
         <main className="max-w-screen-lg mx-auto p-10">
           <h1 className="text-3xl border-b mb-2 pb-1 border-yellow-400">
-            Your Orders
+            注文履歴
           </h1>
 
           {session ? (
             <h2>{orders.length} Orders</h2>
           ) : (
-            <h2>Please sign in to see your orders</h2>
+            <h2>注文履歴を確認するには、サインインしてください。</h2>
           )}
 
           <div className="mt-5 space-y-4">

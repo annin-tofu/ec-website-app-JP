@@ -46,17 +46,17 @@ function Header() {
             className="cursor-pointer link"
           >
             <p className="hover:underline">
-              {session ? `Hello, ${session.user.name}` : "Sign In"}
+              {session ? `${session.user.name}` : "Sign In"}
             </p>
-            <p className="font-extrabold md:text-sm">Account & Lists</p>
+            <p className="font-extrabold md:text-sm">アカウント</p>
           </div>
 
           <div
             onClick={() => router.push("/orders")}
             className="cursor-pointer link"
           >
-            <p>Returns</p>
-            <p className="font-extrabold md:text-sm">& Orders</p>
+            {/* <p>Returns</p> */}
+            <p className="font-extrabold md:text-sm">注文履歴</p>
           </div>
 
           <div
@@ -69,7 +69,7 @@ function Header() {
 
             <ShoppingCartIcon className="h-10" />
             <p className="hidden md:inline font-extrabold md:text-sm mt-2">
-              Basket
+              カート
             </p>
           </div>
         </div>
