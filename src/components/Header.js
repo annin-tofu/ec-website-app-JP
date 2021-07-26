@@ -46,7 +46,7 @@ function Header() {
             className="cursor-pointer link"
           >
             <p className="hover:underline">
-              {session ? `${session.user.name}` : "Sign In"}
+              {session ? `${session.user.name}` : "サインイン"}
             </p>
             <p className="font-extrabold md:text-sm">アカウント</p>
           </div>
