@@ -31,13 +31,13 @@ function Header() {
         </div>
 
         {/* Search */}
-        <div className="hidden sm:flex items-center h-10 rounded-md flex-grow curser-pointer bg-yellow-400 hover:bg-yellow-500">
+        {/* <div className="hidden sm:flex items-center h-10 rounded-md flex-grow curser-pointer bg-yellow-400 hover:bg-yellow-500">
           <input
             className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4"
             type="text"
           />
           <SearchIcon className="h-12 p-4" />
-        </div>
+        </div> */}
 
         {/* Right */}
         <div className="flex items-center text-xs text-white space-x-6 mx-6 whitepsace-nowrap">
