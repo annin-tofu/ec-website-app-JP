@@ -55,7 +55,7 @@ function Header() {
             onClick={() => router.push("/orders")}
             className="cursor-pointer link"
           >
-            {/* <p>Returns</p> */}
+            {/* <p>返品</p> */}
             <p className="font-extrabold md:text-sm">注文履歴</p>
           </div>
 
