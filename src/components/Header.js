@@ -17,14 +17,15 @@ function Header() {
   return (
     <header className="sticky top-0 z-50">
       {/* Top nav */}
-      <div className="flex iterms-center bg-amazon_blue p-1 flex-grow py-2">
+      <div className="flex flex-row flex-grow items-center bg-gray-900 p-1  py-2 ">
+        {/* LOGO */}
         <div className="flex items-center flex-grow sm:flex-grow-0">
           <Image
             onClick={() => router.push("/")}
             //Logo changed 20210716
             src="https://res.cloudinary.com/dhyagpwyl/image/upload/v1626397972/icon-symbols-e-shopper-online-logo-template-vector-23367307_zesxgt.png"
-            width={150}
-            height={40}
+            width={200}
+            height={60}
             objectFit="contain"
             className="cursor-pointer"
           />
@@ -40,7 +41,8 @@ function Header() {
         </div> */}
 
         {/* Right */}
-        <div className="flex items-center text-xs text-white space-x-6 mx-6 whitepsace-nowrap">
+        {/* in order to push right-side header materials pushed to the right, "justify-end" will not work without "flex-grow" */}
+        <div className="flex flex-grow justify-end items-center text-xs text-white space-x-6 whitepsace-nowrap">
           <div
             onClick={!session ? signIn : signOut}
             className="cursor-pointer link"
@@ -76,13 +78,13 @@ function Header() {
       </div>
 
       {/* Bottom nav*/}
-      {/* <div className="flex items-center space-x-3 p-2 pl-6 bg-amazon_blue-light text-white text-sm">
+      {/* <div className="flex items-center space-x-3 p-2 pl-6 bg-purple-500 text-white text-sm">
         <p className="link flex items-center">
           <MenuIcon className="h-6 mr-1" />
           All
         </p>
         <p className="link">Prime Video</p>
-        <p className="link">Amazon Business</p>
+        <p className="link">Business</p>
         <p className="link">Today's Deals</p>
         <p className="link hidden lg:inline-flex">Electronics</p>
         <p className="link hidden lg:inline-flex">Food & Grocery</p>
