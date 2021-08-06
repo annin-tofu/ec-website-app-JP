@@ -42,7 +42,7 @@ function Header() {
 
         {/* Right */}
         {/* in order to push right-side header materials pushed to the right, "justify-end" will not work without "flex-grow" */}
-        <div className="flex flex-grow justify-end items-center text-xs text-white space-x-6 whitepsace-nowrap">
+        <div className="flex flex-grow justify-end items-center text-xs text-white space-x-6 mx-6 whitepsace-nowrap">
           <div
             onClick={!session ? signIn : signOut}
             className="cursor-pointer link"
