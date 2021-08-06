@@ -18,3 +18,4 @@ Run commands
 
 3. `yarn run dev`
 # ec-website-app-JP
+# EC-site-app-with-search-function
