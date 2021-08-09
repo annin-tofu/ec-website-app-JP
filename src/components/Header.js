@@ -17,7 +17,7 @@ function Header() {
   return (
     <header className="sticky top-0 z-50">
       {/* Top nav */}
-      <div className="flex flex-row flex-grow items-center bg-gray-900 p-1  py-2 ">
+      <div className="flex flex-row flex-grow items-center bg-yellow-900 p-1  py-2 ">
         {/* LOGO */}
         <div className="flex items-center flex-grow sm:flex-grow-0">
           <Image
